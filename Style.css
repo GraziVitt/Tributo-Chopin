@@ -1,0 +1,178 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #f9f5f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a5d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Biografia */
+.bio-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.bio-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.bio-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.bio-image img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #5a3921;
+    border-bottom: 1px solid #d4c9b8;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+/* Carrossel */
+.carousel-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #5a3921;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #5a3921;
+    color: white;
+    margin-top: 60px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .bio-section {
+        flex-direction: column;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+}
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
